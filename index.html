@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paulo Henrique — Designer</title>
+  <meta name="description" content="Portfólio de Paulo Henrique, designer em Recife: identidade visual, visual keys, ilustração, design de campanhas e social media.">
+  <meta property="og:title" content="Paulo Henrique — Designer">
+  <meta property="og:description" content="Portfólio de Paulo Henrique, designer em Recife: identidade visual, visual keys, ilustração, design de campanhas e social media.">
+  <meta property="og:url" content="https://henrique-yng.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://henrique-yng.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/simbolo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cortina" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__marca" href="index.html#topo" aria-label="Paulo Henrique Designer — início">
+      <span class="nav__nome">Paulo Henrique <span>Designer</span></span>
+      <span class="nav__local">Designer — Recife, PE</span>
+    </a>
+    <button class="nav__menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <nav class="nav__links" id="nav-links">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a class="pill pill--cheio" href="#contato">Vamos conversar</a>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <section class="hero wrap">
+      <div class="hero__tag revela"><i></i>Portfólio 2026</div>
+      <h1 class="hero__titulo entrada">
+        <span class="mascara"><span>Transformando</span></span>
+        <span class="mascara"><span>ideias em <em>design</em></span></span>
+      </h1>
+      <svg class="hero__simbolo" viewBox="0 0 139.5 139.5" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="13" fill="none">
+          <path d="M69.75 0V139.5"/><path d="M139.5 69.75H0"/>
+          <path d="M119.07 119.07L20.43 20.43"/><path d="M119.07 20.43L20.43 119.07"/>
+        </g>
+      </svg>
+      <div class="hero__intro">
+        <p class="revela" style="--atraso:.35s">Sou Paulo Henrique, designer. Crio peças gráficas de impacto, aliando conceito e estética, para clientes diversos. Com experiência em identidade visual, campanhas, visual keys, social media, ilustração e iniciando na área de design de interfaces com este site. :)</p>
+        <a class="pill revela" style="--atraso:.5s" href="#projetos">Ver projetos ↓</a>
+      </div>
+    </section>
+
+    <hr class="linha revela-linha">
+
+    <div class="tags wrap" id="filtros" aria-label="Filtrar projetos por área">
+      <button class="pill pill--tag revela" style="--i:0" aria-pressed="false" data-filtro="Identidade visual">Identidade visual</button>
+      <button class="pill pill--tag revela" style="--i:1" aria-pressed="false" data-filtro="Visual Keys">Visual Keys</button>
+      <button class="pill pill--tag revela" style="--i:2" aria-pressed="false" data-filtro="Ilustração">Ilustração</button>
+      <button class="pill pill--tag revela" style="--i:3" aria-pressed="false" data-filtro="Design de campanhas">Design de campanhas</button>
+      <button class="pill pill--tag revela" style="--i:4" aria-pressed="false" data-filtro="Social Media">Social Media</button>
+    </div>
+
+    <section class="projetos wrap" id="projetos">
+      <h2 class="secao-titulo">
+        <span class="mascara revela-texto"><span>Projetos</span></span>
+        <span class="mascara revela-texto"><span><em>Selecionados</em></span></span>
+      </h2>
+      <div class="grade" id="grade"></div>
+    </section>
+
+    <section class="sobre wrap" id="sobre">
+      <h2 class="secao-titulo"><span class="mascara revela-texto"><span>Sobre</span></span></h2>
+      <div class="sobre__corpo">
+        <div class="sobre__foto revela-foto">
+          <!-- Foto em assets/img/foto.jpg; sem ela, fica só o círculo vermelho -->
+          <img src="assets/img/foto.jpg" alt="Foto de Paulo Henrique" onerror="this.remove()">
+        </div>
+        <div class="sobre__conteudo">
+          <div class="sobre__texto">
+            <p class="revela">Sou Paulo Henrique, designer finalizando o bacharelado em Design pela UFPE, apaixonado por comunicação visual e por transformar ideias em designs memoráveis.</p>
+            <p class="revela">Meu trabalho transita entre o conceitual e o institucional, sempre buscando a melhor forma de transmitir a mensagem e os valores de cada cliente. Tenho experiência com projetos de identidade visual, design de campanhas, design da informação, criação de posts para redes sociais e ilustração digital.</p>
+            <p class="revela">Ao longo da minha trajetória, já tive o prazer de trabalhar com clientes de diversos setores, como o Ministério da Saúde e o SUS, no laboratório de design da UFPE, e com agências de marketing. Cada projeto é um novo desafio e uma oportunidade de aprendizado.</p>
+          </div>
+          <dl class="sobre__meta revela">
+            <div><dt>Formação</dt><dd>Design — UFPE</dd></div>
+            <div><dt>Ferramentas</dt><dd>Figma, Illustrator, Photoshop, Claude</dd></div>
+          </dl>
+          <!-- Botão do currículo escondido até existir assets/curriculo.pdf:
+          <a class="pill revela" href="assets/curriculo.pdf" download>Baixar currículo ↓</a> -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="contato" id="contato">
+      <div class="contato__bloco">
+        <h2 class="contato__titulo">
+          <span class="mascara revela-texto"><span>Vamos trabalhar</span></span>
+          <span class="mascara revela-texto"><span><em>juntos?</em></span></span>
+        </h2>
+        <p class="contato__rotulo revela">contatos:</p>
+        <div class="contato__links">
+          <a class="pill pill--laranja revela" href="mailto:ola.phdesign@gmail.com">ola.phdesign@gmail.com</a>
+          <a class="pill pill--laranja revela" href="https://wa.me/5581994819339" target="_blank" rel="noopener">(81) 9 9481-9339</a>
+        </div>
+        <div class="rodape">
+          <span>© 2026 Paulo Henrique</span>
+          <a href="#topo">Voltar ao topo ↑</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="cursor" aria-hidden="true"><span>Ver<br>projeto</span></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/posts.js"></script>
+  <script src="js/projetos.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

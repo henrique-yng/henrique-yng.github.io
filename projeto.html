@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto — Paulo Henrique Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/simbolo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-projeto">
+  <div class="cortina" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__marca" href="index.html" aria-label="Paulo Henrique Designer — início">
+      <span class="nav__nome">Paulo Henrique <span>Designer</span></span>
+    </a>
+    <button class="nav__menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <nav class="nav__links" id="nav-links">
+      <a href="index.html#projetos">← Todos os projetos</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a class="pill pill--cheio" href="#contato">Vamos conversar</a>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <hr class="linha revela-linha" style="margin-inline:0">
+    <article id="projeto"></article>
+
+    <footer class="contato" id="contato">
+      <div class="contato__bloco">
+        <h2 class="contato__titulo">
+          <span class="mascara revela-texto"><span>Vamos trabalhar</span></span>
+          <span class="mascara revela-texto"><span><em>juntos?</em></span></span>
+        </h2>
+        <p class="contato__rotulo revela">contatos:</p>
+        <div class="contato__links">
+          <a class="pill pill--laranja revela" href="mailto:ola.phdesign@gmail.com">ola.phdesign@gmail.com</a>
+          <a class="pill pill--laranja revela" href="https://wa.me/5581994819339" target="_blank" rel="noopener">(81) 9 9481-9339</a>
+        </div>
+        <div class="rodape">
+          <span>© 2026 Paulo Henrique</span>
+          <a href="#topo">Voltar ao topo ↑</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <img alt="">
+    <button class="lightbox__fechar" aria-label="Fechar">✕</button>
+    <button class="lightbox__ant" aria-label="Imagem anterior">←</button>
+    <button class="lightbox__prox" aria-label="Próxima imagem">→</button>
+    <div class="lightbox__cont"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/posts.js"></script>
+  <script src="js/projetos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
